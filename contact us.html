@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Marketing</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #595757;
+    padding-left: 10px;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f7c948;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+    padding: 20px;
+    margin-bottom: auto;
+    
+}
+
+.navbar nav ul li a {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 1.5em;
+    align-items: center;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    margin: 10 -35px; 
+}
+
+
+.navbar nav ul li a:hover {
+    color: #f7c948;
+}
+
+.contact {
+    padding: 2em;
+    text-align: center;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.contact p {
+    margin-bottom: 2em;
+    font-size: 23px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form button {
+    font-size: 17px;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 23px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cta-button {
+    background-color: #f7c948;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #e6b034;
+}
+
+.contact-info h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+
+.contact-info p {
+    margin-bottom:0;
+    font-size: 20px;
+}
+
+.cta {
+    background-color: #f4f4f4;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+.cta p{
+    font-size:23px ;
+}
+
+footer {
+    background-color: #1a2b4c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+} 
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">Marketing</div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to learn more about our services, feel free to reach out to us using the form below or through our contact information.</p>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>Email: <a href="mailto:info@marketingco.com">info@marketingco.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: 123 Marketing St, Business City, ABC 12345</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>We're Here to Help!</h2>
+        <p>Don't hesitate to reach out for any inquiries.</p>
+    </section>
+    <footer>
+        <i>&copy; 2024 Marketing Webpage. Designed by Gour Sardar.</i>
+    </footer>
+</body>
+</html>
